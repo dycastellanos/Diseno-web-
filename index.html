@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>CONTACT CENTER Y BPO</title>
+    <!--  <script src="script.js"></script>-->
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="#box1">
+          <li>CONTENIDO TEMÁTICO</li>
+        </a>
+        <a href="#box2"><li>MECANET</li></a>
+        <a href="#box3"><li>CLASSCRAFT</li></a>
+      </ul>
+    </nav>
+
+    <section id="box1">
+      <h1>TÉCNICAS DE DIGITACIÓN DE TEXTOS</h1>
+
+      <div id="cont">
+        <div class="caja">
+          <p class="texto2">
+            Adquirir y mantener una técnica apropiada de digitación, hace parte
+            de la primera etapa en el aprendizaje del Manejo de Teclado. Es
+            importante adoptar la postura adecuada para sentarse correctamente,
+            usar convenientemente el teclado y hacer pausas en el trabajo con
+            alguna frecuencia. La técnica apropiada de digitación, también debe
+            incluir la realización de ejercicios para memorizar la localización
+            de cada una de las teclas y el dedo y mano con el cual se deben
+            pulsar. En la realización de los ejercicios, los estudiantes deben
+            observar estas reglas: * Acatar las normas básicas de ergonomía. *
+            Al iniciar cada ejercicio, descansar la punta de los dedos índice,
+            de ambas manos, sobre las teclas guía (F y J). * No mirar el teclado
+            mientras digita. * Terminar cada lección con un puntaje mínimo de
+            90/100 * Tomar captura de pantalla y enviar evidencia a través del
+            formulario que encuentra en este espacio * El documento a enviar
+            debe ser en formato pdf o word
+          </p>
+          
+          <button id="videopopup" class="boton" onclick="abrirPopup()">
+            Video
+          </button>
+          <div class="popup" id="popup">
+            <h1>¿Cómo transcribir rápido en la computadora?</h1>
+            <iframe
+              width="560"
+              height="315"
+              src="https://youtu.be/BBkFCQU4AEY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <button onclick="cerrarPopup()">Cerrar</button>
+            
+          </div>
+        </div>
+        <div class="caja">
+          <h3>Caja</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="Mecanet">
+      <div class="caja">Caja 1</div>
+      <div class="caja">Caja 2</div>
+    </section>
+
+    <section id="Classcraft">
+      <div class="caja">Caja 1</div>
+      <div class="caja">Caja 2</div>
+    </section>
+
+    <footer>
+      <h6>Todos los derechos reservados</h6>
+    </footer>
+
+    <script>
+      let popup = document.getElementById("popup");
+
+      function abrirPopup() {
+        popup.classList.add("open-popup");
+      }
+
+      function cerrarPopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+  </body>
+</html>
